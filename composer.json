@@ -1,0 +1,22 @@
+{
+	"name"       :"christophersamoilov/kohana-framework-project",
+	"type"       :"project",
+	"description":"Kohana Framework project",
+	"require": {
+		"kohana/core"       : "3.3.*",
+		"kohana/database"   : "3.3.*",
+		"kohana/orm"        : "3.3.*",
+		"kohana/cache"      : "3.3.*",
+		"kohana/codebench"  : "3.3.*",
+		"kohana/image"      : "3.3.*",
+		"kohana/minion"     : "3.3.*",
+		"kohana/unittest"   : "3.3.*",
+		"kohana/userguide"  : "3.3.*",
+		"kohana/auth"       : "3.3.x-dev",
+		"twbs/bootstrap"    : "3.3.x-dev",
+		"components/jquery" : "2.1.4"
+	},
+	"config": {
+		"vendor-dir": "vendor"
+	}
+}

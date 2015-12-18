@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+* {
+    padding:0; margin:0;
+    font-family: Quicksand, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding: 50px 0 150px 0;
+}
+
+.container {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 0.2em;
+}
+
+.show-main {
+    text-align: center;
+}
+
+.jumbotron {
+    margin: 10% 0px 10% 0px;
+}
+
+.about, .contact {
+    margin: 8% 0px 8% 0px;
+}
+
+.container-bottom {;
+    margin: 3% 80% 1% 3%;
+}
+
+@media screen and (max-width: 980px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+    .row-offcanvas-right {
+        right: 0;
+    }
+    .row-offcanvas-left {
+        left: 0;
+    }
+    .row-offcanvas-right .sidebar-offcanvas {
+        right: -50%;
+        /* 6 columns */
+    }
+    .row-offcanvas-left .sidebar-offcanvas {
+        left: -50%;
+        /* 6 columns */
+    }
+    .row-offcanvas-right.active {
+        right: 50%;
+        /* 6 columns */
+    }
+    .row-offcanvas-left.active {
+        left: 50%;
+        /* 6 columns */
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        /* 6 columns */
+    }
+}
