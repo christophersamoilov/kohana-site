@@ -85,7 +85,7 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
-	// 'auth'       => MODPATH.'auth',       // Basic authentication
+	'auth'       => MODPATH.'auth',       // Basic authentication
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
 	// 'database'   => MODPATH.'database',   // Database access
@@ -104,6 +104,13 @@ Kohana::modules(array(
 Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
     ->defaults(array(
         'directory'  => 'admin',
+        'controller' => 'login',
+        'action'     => 'index',
+    ));
+
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
+    ->defaults(array(
+        'directory'  => 'admin',
         'controller' => 'main',
         'action'     => 'index',
     ));
@@ -115,6 +122,6 @@ Route::set('static', '<action>(/<id>)', array('action' => 'about|contact'))
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')
     ->defaults(array(
-        'controller' => 'page',
+        'controller' => 'home',
         'action'     => 'index',
     ));

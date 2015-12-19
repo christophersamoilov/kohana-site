@@ -1,3 +1,5 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,9 +28,13 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="page">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login">Login</a></li>
             </ul>
             <form class="navbar-form navbar-right navbar-inverse" role="search">
                 <div class="form-group">
@@ -55,9 +61,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="page">Home</a>
+        <a class="navbar-brand" href="home">Home</a>
         <a class="navbar-brand" href="about">About</a>
         <a class="navbar-brand" href="contact">Contact</a>
+        <a class="navbar-brand" href="login">Login</a>
     </div>
     <div class="container-bottom">
         <h4>Kohana Site &copy; 2015</h4>

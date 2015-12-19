@@ -1,3 +1,5 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+?>
 <div class="row row-offcanvas row-offcanvas-right">
     <div class="show-main">
         <div class="jumbotron">
